@@ -1,0 +1,44 @@
+@import "../../../../asset/styles/variables.less";
+
+.search-bar{
+  background: white;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: @shadow1;
+  :global(.ant-form){
+    //display: flex;
+    //flex-direction: column;
+    .search-items{
+      //flex:1;
+      :global(.ant-form-item){
+        width: 250px;
+        height: 30px;
+      }
+
+      /*.long-control{
+        &:global(.ant-form-item){
+          width: 240px;
+        }
+      }*/
+    }
+    .search-btns{
+      margin-top: 16px;
+      // width: 136px;
+      display: flex;
+      //flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      //.ant-form-item{
+      //  margin: 0;
+      //}
+    }
+  }
+  :global{
+    .ant-form{
+      // display: flex;
+    }
+    .ant-form-item-label{
+      width: 90px;
+    }
+  }
+}
